@@ -6,17 +6,17 @@
     // Functions
     function createDayEntry(begginingWeek, dayToReport, project) {
         var formData = new FormData();
-        formData.append("date", dayToReport); // report day
-        formData.append("week_beginning", begginingWeek); // first monday of the week
-        formData.append("reference", project); // Project name
-        formData.append("start", "0900"); // begin time
-        formData.append("end", "1800"); // end time
-        formData.append("breaks", "60"); // break is minutes
-        formData.append("comments", ""); // nobody need comments
-        formData.append("submit", ""); // empty stuff
+        formData.append('date', dayToReport); // report day
+        formData.append('week_beginning', begginingWeek); // first monday of the week
+        formData.append('reference', project); // Project name
+        formData.append('start', '0900'); // begin time
+        formData.append('end', '1800'); // end time
+        formData.append('breaks', '60'); // break is minutes
+        formData.append('comments', ''); // nobody need comments
+        formData.append('submit', ''); // empty stuff
 
         var request = new XMLHttpRequest();
-        request.open("POST", "https://www.naturalhr.net/hr/self-service/timesheets/timesheet-add");
+        request.open('POST', 'https://www.naturalhr.net/hr/self-service/timesheets/timesheet-add');
         request.send(formData);
     }
 
