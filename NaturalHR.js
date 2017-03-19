@@ -76,5 +76,5 @@
         }
     }
 
-    weekIterator('Rebrand');
+    weekIterator('Product marketplace');
 })();
